@@ -10,7 +10,8 @@
     "demo": "babel-node ./examples/demo.jsx",
     "contrib": "babel-node ./examples/contrib.jsx",
     "prepublish": "npm run build",
-    "test": "mocha -R spec --compilers js:babel-register ./test/endpoint.js"
+    "test": "mocha -R spec --compilers js:babel-register ./test/endpoint.js",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
